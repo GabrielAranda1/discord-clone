@@ -7,7 +7,6 @@ function App() {
   return (
     <>
       <Layout />
-      <h1>Salve</h1>
       <GlobalStyles />
     </>
   )
