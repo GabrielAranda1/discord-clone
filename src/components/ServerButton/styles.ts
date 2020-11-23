@@ -37,8 +37,11 @@ export const Button = styled.button<Props>`
     background-color: var(--white);
     border-radius: 50%;
 
+    display: inline;
     content: '';
     display: ${(props) => (props.hasNotifications ? 'inline' : 'none')};
+
+    transition: 0.2s;
   }
 
   &:hover::before {
@@ -54,7 +57,6 @@ export const Button = styled.button<Props>`
     content: '';
 
     display: inline;
-    transition: border-radius 0.2s;
   }
 
   &::after {
