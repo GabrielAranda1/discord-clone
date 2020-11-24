@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { AlternateEmail } from 'styled-icons/material'
+import { AddCircle } from 'styled-icons/material'
 
 export const Container = styled.div`
   grid-area: CD;
@@ -15,6 +15,7 @@ export const Messages = styled.div`
   flex-direction: column;
   max-height: calc(100vh - 46px - 68px);
   overflow-y: scroll;
+
   ::-webkit-scrollbar {
     width: 8px;
   }
@@ -40,18 +41,20 @@ export const Input = styled.input`
   color: var(--white);
   background-color: var(--chat-input);
   position: relative;
+
   &::placeholder {
     color: var(--gray);
   }
+
   ~ svg {
     position: relative;
-    top: -50%;
+    top: -33px;
     left: 14px;
     transition: 180ms ease-in-out;
   }
 `
 
-export const InputIcon = styled(AlternateEmail)`
+export const InputIcon = styled(AddCircle)`
   width: 24px;
   height: 24px;
   color: var(--gray);
