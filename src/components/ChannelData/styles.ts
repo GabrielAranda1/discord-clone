@@ -18,6 +18,8 @@ export const Messages = styled.div`
 
   ::-webkit-scrollbar {
     width: 8px;
+    display: flex;
+    margin-left: 200px;
   }
   ::-webkit-scrollbar-thumb {
     background-color: var(--tertiary);
@@ -25,6 +27,7 @@ export const Messages = styled.div`
   }
   ::-webkit-scrollbar-track {
     background-color: var(--secondary);
+    border-radius: 4px;
   }
 `
 
